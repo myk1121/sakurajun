@@ -10,6 +10,10 @@ body {
   max-width: 1000px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 
 /* ===================
 header
@@ -40,12 +44,12 @@ header
 /* ===================
 fv
 ======================*/
-/* .section-fv {
-  background-image: url(../img/fv/top-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 50px;
-} */
+.section-fv {
+  padding-top: 0 !important;
+}
+.fv-img {
+  width: 100%;
+}
 
 
 /* ===================
@@ -53,6 +57,33 @@ topページ
 ======================*/
 .top-section-flow {
   background-color: #f8f8f8;
+}
+
+/* ===================
+税理士紹介
+======================*/
+.profile-img {
+  width: 70%;
+  padding-bottom: 40px;
+}
+
+.profile-text {
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+@media screen and (max-width:575px) {
+  .profile-text {
+    font-size: 0.85rem;
+    line-height: 1.8rem;
+}
+}
+
+/* ===================
+業務案内
+======================*/
+.service-contents p {
+  color: #141414;
 }
 
 
@@ -99,4 +130,14 @@ topページ
 }
 .news-text {
   line-height: 1.8;
+}
+
+/* ===================
+お知らせ
+======================*/
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
