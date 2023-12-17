@@ -60,7 +60,7 @@ try {
 	$mail->Host = '	smtp.gmail.com';				       // Specify main and backup server
 	$mail->SMTPAuth = true;                                  // Enable SMTP authentication
 	$mail->Username = 'myk.newsletter@gmail.com';                    // SMTP username
-	$mail->Password = 'pymreB-6kepbo-myjhaf';                              // SMTP password
+	$mail->Password = 'uuuyzpzaxlfcvjgy';                              // SMTP password
 	$mail->SMTPSecure = 'ssl';                               // Enable encryption, 'ssl' also accepted
 	$mail->Port = 587;   								       // TCP port to connect to
 
