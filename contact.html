@@ -145,18 +145,28 @@
 													placeholder="例）山田 太郎" class="form-control text-3 h-auto py-2" name="name" required>
 											</div>
 											<div class="form-group col-12">
+												<label class="form-label mb-1 text-2">フリガナ</label>
+												<input type="text" value="" data-msg-required="フリガナをご入力ください。" maxlength="100"
+													placeholder="例）ヤマダ タロウ" class="form-control text-3 h-auto py-2" name="name-f" required>
+											</div>
+											<div class="form-group col-12">
 												<label class="form-label mb-1 text-2">メールアドレス</label>
 												<input type="email" value="" data-msg-required="メールアドレスをご入力ください。"
-													data-msg-email="Please enter a valid email address." maxlength="100"
+													data-msg-email="有効なメールアドレスをご入力ください。" maxlength="100"
 													placeholder="例）example@example.com" class="form-control text-3 h-auto py-2" name="email" required>
 											</div>
 										</div>
 										<div class="row">
-											<div class="form-group col">
+											<div class="form-group col-12">
 												<label class="form-label mb-1 text-2">電話番号</label>
 												<input type="text" value="" data-msg-required="電話番号をご入力ください。" maxlength="100"
 													placeholder="例）000-1234-5678" class="form-control text-3 h-auto py-2" name="phone-numbeer" required>
 											</div>
+										</div>
+										<div class="form-group col-12">
+											<label class="form-label mb-1 text-2">会社名</label>
+											<input type="text" value="" data-msg-required="お名前をご入力ください。" maxlength="100"
+												placeholder="例）〇〇株式会社" class="form-control text-3 h-auto py-2" name="company">
 										</div>
 										<div class="row">
 											<div class="form-group col">
@@ -164,31 +174,25 @@
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="" id="Check1">
 													<label class="form-check-label" for="Check1">
-														内容1
+														ビジネスプラン（顧問契約）について
 													</label>
 												</div>
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="" id="Check2">
 													<label class="form-check-label" for="Check2">
-														内容2
+														パーソナルプラン（個人の確定申告）について
 													</label>
 												</div>
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="" id="Check3">
 													<label class="form-check-label" for="Check3">
-														内容3
+														オンライン相談について
 													</label>
 												</div>
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="" id="Check4">
 													<label class="form-check-label" for="Check4">
-														内容4
-													</label>
-												</div>
-												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value="" id="Check5">
-													<label class="form-check-label" for="Check5">
-														内容5
+														その他
 													</label>
 												</div>
 											</div>
@@ -196,7 +200,7 @@
 										<div class="row">
 											<div class="form-group col">
 												<label class="form-label mb-1 text-2">ご相談内容</label>
-												<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8"
+												<textarea maxlength="5000" data-msg-required="ご相談内容をご入力ください。" rows="8"
 													class="form-control text-3 h-auto py-2" name="message" required></textarea>
 											</div>
 										</div>
@@ -207,7 +211,7 @@
 													をご確認の上、チェックをお願いします。</label>
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="" name="agree"
-														id="tabContent15Checkbox" data-msg-required="You must agree before submiting." required>
+														id="tabContent15Checkbox" data-msg-required="チェックは必須となります。" required>
 													<label class="form-check-label" for="tabContent15Checkbox">
 														同意する
 													</label>
@@ -249,26 +253,23 @@
 			</div>
 			<div class="container pt-lg-5 mt-5">
 				<div class="row">
-					<div class="col-lg-3 mb-5 mb-lg-0">
+					<div class="col-lg-3 mb-4 mb-lg-0">
 						<!-- <a href="index.html">
 							<img src="img/demos/industry-factory/logo-light.png" class="img-fluid mt-5 mb-4"
 								alt="Demo Industry & Factory" />
 						</a> -->
 						<h4 class="text-color-light font-weght-bold text-5 positive-ls-2">さくら純税理士事務所</h4>
 						<p>
-							〒123-4567<br>
-							東京都xx区xx1-2-34
+							〒135-0062<br>
+							東京都江東区東雲1-9-4-902<br>
+							税理士　山口純
 						</p>
 						<ul class="social-icons social-icons-medium">
-							<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i
-										class="fab fa-facebook-f"></i></a></li>
-							<li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i
-										class="fab fa-twitter"></i></a></li>
 							<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank"
 									title="Instagram"><i class="fab fa-instagram"></i></a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 offset-lg-1 mb-5 mb-lg-0">
+					<div class="col-lg-4 offset-lg-1 mb-4 mb-lg-0">
 						<h4 class="text-color-light font-weght-bold positive-ls-2 custom-font-size-2">PAGE MENU</h4>
 						<div class="row">
 							<div class="col-md-6">
@@ -288,14 +289,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 offset-lg-1 mb-5 mb-lg-0">
+					<div class="col-lg-3 offset-lg-1 mb-3 mb-lg-0">
 						<h4 class="text-color-light font-weght-bold positive-ls-2 custom-font-size-2">CONTACT</h4>
-						<p>TEL：000-123-4567<br>
-							MAIL：info@example.com</p>
+						<p>MAIL：info@skrtax.com</p>
 					</div>
 				</div>
 			</div>
-			<div class="footer-copyright custom-bg-lighten-grey-1 mt-5 pb-5">
+			<div class="footer-copyright custom-bg-lighten-grey-1 mt-lg-5 pb-5">
 				<div class="container custom-footer-top-light-border pt-4">
 					<div class="row">
 						<div class="col">
