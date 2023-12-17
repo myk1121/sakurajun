@@ -14,6 +14,10 @@ body {
   text-align: left;
 }
 
+.bg-color-white {
+  background: #FFFFFF !important;
+}
+
 
 /* ===================
 header
@@ -26,9 +30,14 @@ header
   width: 100%;
 }
 
+/* ===================
+fv
+======================*/
 .top-text-contents {
   background-color: #f7f7f7d2;
   min-height: 650px;
+  padding: 3rem 6rem;
+
 }
 @media screen and (max-width:1200px) {
   .top-text-contents {
@@ -41,9 +50,6 @@ header
   }
 }
 
-/* ===================
-fv
-======================*/
 .section-fv {
   padding-top: 0 !important;
 }
@@ -57,6 +63,10 @@ topページ
 ======================*/
 .top-section-flow {
   background-color: #f8f8f8;
+}
+
+li .top-list-contents {
+  padding-top: 0;
 }
 
 /* ===================
@@ -80,12 +90,38 @@ topページ
 }
 
 /* ===================
-業務案内
+サービス
 ======================*/
 .service-contents p {
   color: #141414;
 }
 
+.service-contents h2 {
+  background: linear-gradient(transparent 60%, #f79fcbe1 60%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ===================
+料金案内
+======================*/
+.price-contents-plan h3{
+  background: linear-gradient(transparent 58%, #f79fcbe1 58%);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.price-contents-item th {
+  vertical-align: middle;
+  text-align: center;
+  color: #704900;
+  background-color: #fdf8bf;
+}
+
+.table-middle {
+  width: 62%;
+}
 
 /* ===================
 お知らせ
@@ -133,7 +169,7 @@ topページ
 }
 
 /* ===================
-お知らせ
+問い合わせ
 ======================*/
 .contact-container {
   max-width: 600px;
