@@ -61,7 +61,7 @@ try {
 	$mail->SMTPAuth = true;                                  // Enable SMTP authentication
 	$mail->Username = 'myk.newsletter';                    // SMTP username
 	$mail->Password = 'uuuyzpzaxlfcvjgy';                              // SMTP password
-	$mail->SMTPSecure = 'ssl';                               // Enable encryption, 'ssl' also accepted
+	$mail->SMTPSecure = 'tls';                               // Enable encryption, 'ssl' also accepted
 	$mail->Port = 587;   								       // TCP port to connect to
 
 	$mail->AddAddress($email);	 						       // Add another recipient
